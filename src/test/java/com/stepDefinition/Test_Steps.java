@@ -35,6 +35,7 @@ public class Test_Steps
 //		uname.sendKeys("vasuvespag");
 		
 		loginPg.enterUsername("vasuvespag");
+		System.out,println("User enters Username")
 	}
 
 	@When("User enters Password")
@@ -119,6 +120,7 @@ public class Test_Steps
 
 		@When("User enters Password as <{string}>")
 		public void user_enters_password_as(String string) {
+			driver.findElement(By.id("password")).clear();
 			driver.findElement(By.id("password")).sendKeys(string);
 		}
 		
