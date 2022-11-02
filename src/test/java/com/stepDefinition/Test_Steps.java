@@ -35,7 +35,7 @@ public class Test_Steps
 //		uname.sendKeys("vasuvespag");
 		
 		loginPg.enterUsername("vasuvespag");
-		System.out,println("User enters Username")
+		System.out,println("User enters Username");
 	}
 
 	@When("User enters Password")
@@ -43,6 +43,7 @@ public class Test_Steps
 		//driver.findElement(By.id("password")).sendKeys("vasu1234");
 		
 		loginPg.enterPassword("vasu1234");
+		System.out,println("User enters Password");
 	}
 
 	@When("User clicks on Login button")
